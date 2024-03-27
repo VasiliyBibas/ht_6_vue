@@ -1,0 +1,251 @@
+@import 'variables';
+
+
+.banner-topBlog {
+	background-image: url('../../../public/img/Kitchen_bg.jpg');
+}
+
+.top-blog {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 100wh;
+	width: 100%;
+	min-height: 353px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	&__title-div {
+		display: flex;
+		width: 503px;
+		min-height: 178px;
+		background-color: #fff;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+	}
+
+	&__title {
+		font-family: $SecondFontText;
+		font-size: 50px;
+		line-height: 125%;
+	}
+
+	&__text {
+		color: $secondColorText;
+		line-height: 150%;
+		letter-spacing: 0.22px;
+	}
+}
+
+.container-post {}
+
+.post {
+	margin-top: 96px;
+
+	&__title {
+		font-family: $SecondFontText;
+		font-size: 50px;
+		line-height: 125%;
+		letter-spacing: 1px;
+	}
+
+	&__card {
+		display: flex;
+		max-width: 1200px;
+		// min-height: 522px;
+		padding: 22px;
+		border: 1px solid #E7E7E7;
+		border-radius: 62px;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 65px;
+		flex-wrap: wrap;
+		margin-top: 27px;
+	}
+
+	&__img {
+		border-radius: 50px;
+	}
+
+	&__about {
+		display: flex;
+		max-width: 489px;
+		min-height: 375px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		// margin-left: 65px;
+	}
+
+	&__title-about {
+		max-width: 469px;
+		font-family: $SecondFontText;
+		font-size: 25px;
+		line-height: 125%;
+		letter-spacing: 0.5px;
+	}
+
+	&__text-about {
+		max-width: 469px;
+		color: $secondColorText;
+		line-height: 150%;
+		letter-spacing: 0.22px;
+		margin-top: 22px;
+	}
+
+	&__date-btn {
+		display: flex;
+		width: 489px;
+		margin-top: 41px;
+		align-items: center;
+		justify-content: space-between;
+		gap: 214px;
+	}
+
+	&__date {
+		color: $secondColorText;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.16px;
+		text-transform: capitalize;
+	}
+
+	&__btn {
+		border-radius: 50%;
+		width: 52px;
+		height: 52px;
+		border: none;
+		background-color: #F4F0EC;
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__btn:hover {
+		background-color: #ccc;
+	}
+
+	&__btn:active {
+		background-color: burlywood;
+	}
+
+	&__btn span::after,
+	&__btn span::before {
+		content: "";
+		display: block;
+		width: 12px;
+		height: 2px;
+		background-color: black;
+		position: absolute;
+		left: 21px;
+	}
+
+	&__btn span::before {
+		bottom: 23px;
+		transform: rotate(135deg);
+	}
+
+	&__btn span::after {
+		top: 20px;
+		transform: rotate(-135deg);
+	}
+
+
+}
+
+.articles-blog {
+
+	&__about {
+		margin-top: 96px;
+	}
+
+	&__title {
+		// text-align: center;
+		font-family: $SecondFontText;
+		font-size: 50px;
+		line-height: 125%;
+		letter-spacing: 1px;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 23px;
+		margin-top: 30px;
+	}
+}
+
+.pagination {
+
+	&__ul {
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		align-items: center;
+		margin-top: 51px;
+		gap: 20px;
+	}
+
+	&__numbers {}
+
+	&__links {
+		display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #CDA274;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+		color: #292F36;
+		position: relative;
+	}
+
+	&__links span::after,
+  &__links span::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 21px;
+  }
+
+  &__links span::before {
+    bottom: 23px;
+    transform: rotate(135deg);
+  }
+
+  &__links span::after {
+    top: 20px;
+    transform: rotate(-135deg);
+  }
+
+	&__links:hover {
+		background-color: #ccc;
+	}
+
+	&__links:active {
+		background-color: #CDA274;
+		color: #292F36;
+	}
+
+	&__links_opened {
+		background-color: #F4F0EC;
+		border: 1px solid #F4F0EC;
+	}
+
+
+}
+
+.footer-blog_margin {
+	margin-top: 200px;
+}

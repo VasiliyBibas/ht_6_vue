@@ -1,0 +1,145 @@
+@import 'variables';
+@import "mixins";
+@import "vars";
+
+
+
+.banner-topBlogDetails {
+	background-image: url('../../../public/img/details_photo.jpg');
+}
+
+.main-block {
+	display: flex;
+	justify-content: space-between;
+	gap: 52px;
+	margin-top: 210px;
+}
+
+.bread-crambs {
+	display: flex;
+	justify-content: center;
+
+	&-link {
+			@include fontText(#4D5053, 400, 22px);
+
+			&:hover {
+					color: #CDA274;
+			}
+	}
+
+	// & li:last-child a {
+	//     font-weight: 700;
+	//     color: $colorSelectSite;
+	// }
+
+	& li:not(:last-child) a::after {
+			content: '/';
+			margin-left: 5px;
+			margin-right: 5px;
+	}
+}
+
+.articles {
+	&__left {
+		max-width: 800px;
+		&_title {
+			@include fontHeader(#292f36, 400, 50px);
+			text-align: left;
+			margin-bottom: 11px;
+		}
+
+		&_img {
+			border-radius: 62px;
+			margin-bottom: 46px;
+			min-width: 799px;
+		}
+
+		&_text {
+			@include fontText(#4d5053, 400, 22px);
+			line-height: 150%;
+			text-align: left;
+			margin-bottom: 35px;
+		}
+	}
+
+	&__right {
+		&_title {
+			@include fontHeader(#292f36, 400, 25px);
+			text-align: left;
+			margin-bottom: 24px;
+		}
+	}
+
+	&_btn {
+		@include fontText(#292f36, 400, 18px);
+		border-radius: 10px;
+		background: #f4f0ec;
+		border: none;
+		padding: 9px 30px;
+		margin-right: 10px;
+		margin-bottom: 11px;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #292f36;
+			color: #fff;
+		}
+
+	}
+
+	&__data-block {
+		margin-bottom: 48px;
+		@include flex-nav();
+	}
+
+	&__disine-rule {
+		display: flex;
+		// width: 799px;
+		padding: 0px 227px 53px 227px;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		border-radius: 50px;
+		background: #F4F0EC;
+		margin-bottom: 27px;
+	}
+}
+
+.ticky {
+  @include fontHeader(#CDA274, 400, 200px);
+  font-style: italic;
+  letter-spacing: 4px;
+  transform: rotate(180deg);
+  margin-bottom: -50px;
+  margin-top: -50px;
+
+}
+.under-ticky {
+  @include fontHeader(#CDA274, 400, 25px); 
+  font-style: italic;  
+}
+.design-sprints {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__name {
+    @include fontHeader(#292F36, 400, 50px);
+    margin-bottom: 20px;
+  }
+  &__article {
+    @include fontText(#4D5053, 400, 22px);
+    line-height: 150%;
+    margin-bottom: 24px;
+    text-align: left;
+  }  
+}
+.list-flex {
+  @include fontText(#4D5053, 400, 22px);
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.list-flex >li {
+  margin-bottom: 34px;
+}
+
